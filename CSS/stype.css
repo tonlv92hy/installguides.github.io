@@ -1,0 +1,123 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    
+}
+* {
+    box-sizing: border-box;
+}
+.default-theme {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 15px;
+    line-height: 1;
+    color: #666;
+    
+
+}
+.default-theme .header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: block;
+}
+.main-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: #666;
+    
+}
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+  }
+  
+  ul.sidenav li a {
+    display: block;
+    color: rgba(102, 102, 102, 0.871);
+    padding: 8px 16px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.272);
+    border-radius: 16px ;
+    
+  }
+   
+  ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: #000;
+    
+  }
+  
+  ul.sidenav li a:hover:not(.active) {
+    background-color:--light;
+    color: black;
+    
+  }
+  
+  div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    ul.sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    
+    ul.sidenav li a {
+      text-align: center;
+      padding: 15px;
+    }
+    
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 500px) {
+    ul.sidenav li a {
+      text-align: left;
+      float: none;
+    }
+  }
+
+
